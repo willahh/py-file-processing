@@ -8,7 +8,7 @@ def extraire_contenu_zip(nom_fichier_zip, dossier_extraction):
         zip_ref.extractall(dossier_extraction)
         
   
-extraire_contenu_zip(zip_file_path)
+extraire_contenu_zip(zip_file_path, 'static/tmp')
 
 # with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
 #     file_list = zip_ref.namelist();
